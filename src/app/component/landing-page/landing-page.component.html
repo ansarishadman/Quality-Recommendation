@@ -1,0 +1,461 @@
+<div class="_custom-body">
+  <!-- first page form -->
+  <div class="container" *ngIf="showFirstPage">
+    <div class="__header">
+      <img src="../../../assets/logo.png" />
+      <div class="__header_title">
+        Quality for Recommendation
+        <span class="dot">{{ pageNumber }}</span>
+      </div>
+    </div>
+    <div class="inc-custom">
+      <b>Incident#:</b> {{ randomIncidentNo }}
+      <br />
+      <b>Summary:</b> {{ summaryDataInfo }}
+      <br />
+      <b>Notes:</b> {{ notesDataInfo }}
+      <br />
+      <b>Resolution:</b> {{ resolutionDataInfo }}
+      <br />
+      <b>Worklog Notes:</b> {{ worklogDataInfo }}
+      <br />
+    </div>
+
+    <div class="inc-custom">
+      <b>Incident#:</b> {{ incidentNoR1 }}
+      <br />
+      <b>Summary:</b> {{ summaryDataInfoR1 }}
+      <br />
+      <b>Notes:</b> {{ notesDataInfoR1 }}
+      <br />
+      <b>Resolution:</b> {{ resolutionDataInfoR1 }}
+      <br />
+      <b>Worklog Notes:</b> {{ worklogDataInfoR1 }}
+      <br />
+      <div class="slider_container">
+        <h6>RELATEDNESS</h6>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            step="10"
+            (click)="slider2Change($event)"
+          />
+          <b>Relatedness Rating: </b> {{ slider2Rating }}
+        </div>
+        <br />
+        <h6>INFORMATIVENESS</h6>
+        <div class="slidecontainer info_slider">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            step="10"
+            (click)="slider2ChangeInf($event)"
+          />
+          <b>Informativeness Rating: </b> {{ slider2RatingInf }}
+        </div>
+      </div>
+    </div>
+
+    <div class="inc-custom">
+      <b>Incident#:</b> {{ incidentNoR2 }}
+      <br />
+      <b>Summary:</b> {{ summaryDataInfoR2 }}
+      <br />
+      <b>Notes:</b> {{ notesDataInfoR2 }}
+      <br />
+      <b>Resolution:</b> {{ resolutionDataInfoR2 }}
+      <br />
+      <b>Worklog Notes:</b> {{ worklogDataInfoR2 }}
+      <br />
+      <div class="slider_container">
+        <h6>RELATEDNESS</h6>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            step="10"
+            (click)="slider3Change($event)"
+          />
+          <b>Relatedness Rating: </b> {{ slider3Rating }}
+        </div>
+        <br />
+        <h6>INFORMATIVENESS</h6>
+        <div class="slidecontainer info_slider">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            step="10"
+            (click)="slider3ChangeInf($event)"
+          />
+          <b>Informativeness Rating: </b> {{ slider3RatingInf }}
+        </div>
+      </div>
+    </div>
+
+    <div class="inc-custom">
+      <b>Incident#:</b> {{ incidentNoR3 }}
+      <br />
+      <b>Summary:</b> {{ summaryDataInfoR3 }}
+      <br />
+      <b>Notes:</b> {{ notesDataInfoR3 }}
+      <br />
+      <b>Resolution:</b> {{ resolutionDataInfoR3 }}
+      <br />
+      <b>Worklog Notes:</b> {{ worklogDataInfoR3 }}
+      <br />
+      <div class="slider_container">
+        <h6>RELATEDNESS</h6>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            step="10"
+            (click)="slider4Change($event)"
+          />
+          <b>Relatedness Rating: </b> {{ slider4Rating }}
+        </div>
+        <br />
+        <h6>INFORMATIVENESS</h6>
+        <div class="slidecontainer info_slider">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            step="10"
+            (click)="slider4ChangeInf($event)"
+          />
+          <b>Informativeness Rating: </b> {{ slider4RatingInf }}
+        </div>
+      </div>
+      <br />
+      <a href="#" class="next" (click)="nextPage1()">Next</a>
+    </div>
+  </div>
+
+  <!-- second page of form -->
+
+  <div class="container" *ngIf="showSecondPage">
+    <div class="__header">
+      <img src="../../../assets/logo.png" />
+      <div class="__header_title">
+        Quality for Recommendation
+        <span class="dot">{{ pageNumber }}</span>
+      </div>
+    </div>
+    <div class="inc-custom">
+      <b>Incident#:</b> {{ randomIncidentNo }}
+      <br />
+      <b>Summary:</b> {{ summaryDataInfo }}
+      <br />
+      <b>Notes:</b> {{ notesDataInfo }}
+      <br />
+      <b>Resolution:</b> {{ resolutionDataInfo }}
+      <br />
+      <b>Worklog Notes:</b> {{ worklogDataInfo }}
+      <br />
+    </div>
+
+    <div class="inc-custom">
+      <b>Incident#:</b> {{ incidentNoR1 }}
+      <br />
+      <b>Summary:</b> {{ summaryDataInfoR1 }}
+      <br />
+      <b>Notes:</b> {{ notesDataInfoR1 }}
+      <br />
+      <b>Resolution:</b> {{ resolutionDataInfoR1 }}
+      <br />
+      <b>Worklog Notes:</b> {{ worklogDataInfoR1 }}
+      <br />
+      <div class="slider_container">
+        <h6>RELATEDNESS</h6>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            step="10"
+            (click)="slider2Change($event)"
+          />
+          <b>Relatedness Rating: </b> {{ slider2Rating }}
+        </div>
+        <br />
+        <h6>INFORMATIVENESS</h6>
+        <div class="slidecontainer info_slider">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            step="10"
+            (click)="slider2ChangeInf($event)"
+          />
+          <b>Informativeness Rating: </b> {{ slider2RatingInf }}
+        </div>
+      </div>
+    </div>
+
+    <div class="inc-custom">
+      <b>Incident#:</b> {{ incidentNoR2 }}
+      <br />
+      <b>Summary:</b> {{ summaryDataInfoR2 }}
+      <br />
+      <b>Notes:</b> {{ notesDataInfoR2 }}
+      <br />
+      <b>Resolution:</b> {{ resolutionDataInfoR2 }}
+      <br />
+      <b>Worklog Notes:</b> {{ worklogDataInfoR2 }}
+      <br />
+      <div class="slider_container">
+        <h6>RELATEDNESS</h6>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            step="10"
+            (click)="slider3Change($event)"
+          />
+          <b>Relatedness Rating: </b> {{ slider3Rating }}
+        </div>
+        <br />
+        <h6>INFORMATIVENESS</h6>
+        <div class="slidecontainer info_slider">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            step="10"
+            (click)="slider3ChangeInf($event)"
+          />
+          <b>Informativeness Rating: </b> {{ slider3RatingInf }}
+        </div>
+      </div>
+    </div>
+
+    <div class="inc-custom">
+      <b>Incident#:</b> {{ incidentNoR3 }}
+      <br />
+      <b>Summary:</b> {{ summaryDataInfoR3 }}
+      <br />
+      <b>Notes:</b> {{ notesDataInfoR3 }}
+      <br />
+      <b>Resolution:</b> {{ resolutionDataInfoR3 }}
+      <br />
+      <b>Worklog Notes:</b> {{ worklogDataInfoR3 }}
+      <br />
+      <div class="slider_container">
+        <h6>RELATEDNESS</h6>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            step="10"
+            (click)="slider4Change($event)"
+          />
+          <b>Relatedness Response: </b> {{ slider4Rating }}
+        </div>
+        <br />
+        <h6>INFORMATIVENESS</h6>
+        <div class="slidecontainer info_slider">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            step="10"
+            (click)="slider4ChangeInf($event)"
+          />
+          <b>Informativeness Rating: </b> {{ slider4RatingInf }}
+        </div>
+      </div>
+      <br />
+      <a href="#" class="next" (click)="nextPage2()">Next</a>
+    </div>
+  </div>
+
+  <!-- third page of form -->
+
+  <div class="container" *ngIf="showThirdPage">
+    <div class="__header">
+      <img src="../../../assets/logo.png" />
+      <div class="__header_title">
+        Quality for Recommendation
+        <span class="dot">{{ pageNumber }}</span>
+      </div>
+    </div>
+    <div class="inc-custom">
+      <b>Incident#:</b> {{ randomIncidentNo }}
+      <br />
+      <b>Summary:</b> {{ summaryDataInfo }}
+      <br />
+      <b>Notes:</b> {{ notesDataInfo }}
+      <br />
+      <b>Resolution:</b> {{ resolutionDataInfo }}
+      <br />
+      <b>Worklog Notes:</b> {{ worklogDataInfo }}
+      <br />
+    </div>
+
+    <div class="inc-custom">
+      <b>Incident#:</b> {{ incidentNoR1 }}
+      <br />
+      <b>Summary:</b> {{ summaryDataInfoR1 }}
+      <br />
+      <b>Notes:</b> {{ notesDataInfoR1 }}
+      <br />
+      <b>Resolution:</b> {{ resolutionDataInfoR1 }}
+      <br />
+      <b>Worklog Notes:</b> {{ worklogDataInfoR1 }}
+      <br />
+      <div class="slider_container">
+        <h6>RELATEDNESS</h6>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            step="10"
+            (click)="slider2Change($event)"
+          />
+          <b>Relatedness Rating: </b> {{ slider2Rating }}
+        </div>
+        <br />
+        <h6>INFORMATIVENESS</h6>
+        <div class="slidecontainer info_slider">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            step="10"
+            (click)="slider2ChangeInf($event)"
+          />
+          <b>Informativeness Rating: </b> {{ slider2RatingInf }}
+        </div>
+      </div>
+    </div>
+
+    <div class="inc-custom">
+      <b>Incident#:</b> {{ incidentNoR2 }}
+      <br />
+      <b>Summary:</b> {{ summaryDataInfoR2 }}
+      <br />
+      <b>Notes:</b> {{ notesDataInfoR2 }}
+      <br />
+      <b>Resolution:</b> {{ resolutionDataInfoR2 }}
+      <br />
+      <b>Worklog Notes:</b> {{ worklogDataInfoR2 }}
+      <br />
+      <div class="slider_container">
+        <h6>RELATEDNESS</h6>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            step="10"
+            (click)="slider3Change($event)"
+          />
+          <b>Relatedness Rating: </b> {{ slider3Rating }}
+        </div>
+        <br />
+        <h6>INFORMATIVENESS</h6>
+        <div class="slidecontainer info_slider">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            step="10"
+            (click)="slider3ChangeInf($event)"
+          />
+          <b>Informativeness Rating: </b> {{ slider3RatingInf }}
+        </div>
+      </div>
+    </div>
+
+    <div class="inc-custom">
+      <b>Incident#:</b> {{ incidentNoR3 }}
+      <br />
+      <b>Summary:</b> {{ summaryDataInfoR3 }}
+      <br />
+      <b>Notes:</b> {{ notesDataInfoR3 }}
+      <br />
+      <b>Resolution:</b> {{ resolutionDataInfoR3 }}
+      <br />
+      <b>Worklog Notes:</b> {{ worklogDataInfoR3 }}
+      <br />
+      <div class="slider_container">
+        <h6>RELATEDNESS</h6>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            step="10"
+            (click)="slider4Change($event)"
+          />
+          <b>Relatedness Rating: </b> {{ slider4Rating }}
+        </div>
+        <br />
+        <h6>INFORMATIVENESS</h6>
+        <div class="slidecontainer info_slider">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            step="10"
+            (click)="slider4ChangeInf($event)"
+          />
+          <b>Informativeness Rating: </b> {{ slider4RatingInf }}
+        </div>
+      </div>
+      <br />
+      <a href="#" class="next" (click)="finalSubmit()">Submit</a>
+    </div>
+  </div>
+
+  <!-- Quality for Recommendation Completed -->
+  <div class="container" *ngIf="showCompletedPage">
+    <h2>Thank You for your response!</h2>
+  </div>
+</div>
