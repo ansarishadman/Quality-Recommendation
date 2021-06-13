@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  webURL: `https://prain-recommendation-engine.app.bmw`,
+  production: true,
 };
