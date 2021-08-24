@@ -12,9 +12,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Serving application
 
-angular-version used: 12.0.3
-Build: <ng build>
-<cd quality-recommendation>
-<npm install>
-For json-server: <npm run json:server>
-For serving angular: <ng serve>
+- angular-version used: 12.0.3
+- Build: ng build
+- cd quality-recommendation
+- npm install
+- For json-server: npm run json-server
+- For serving angular: ng serve
